@@ -1,0 +1,58 @@
+.menu {
+    width: 60%; /* 横幅 */
+    margin: 0 auto;  /* 中央寄せ（左右に余白がないとできない） */
+    text-align: center; /* 文字を中央揃えにする */
+}
+
+.menu-title {
+    display: flex; /* Flexboxの利用 */
+}
+
+.menu-title h1 {
+    font-size: 20px;
+}
+
+.switch_outer {
+    width: 70px;
+    height: 40px;
+    margin: auto auto auto 20%;
+    background-color: lightgray;
+    border-radius: 30px;
+    position: relative;
+}
+
+.switch_outer.active {
+    background-color: #51E373;
+}
+
+.menu-title h1:hover, .switch_outer:hover {
+    cursor: pointer;
+}
+
+.toggle_switch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    margin: auto;
+    box-shadow: 1px 1px 7px #B7B7B7, -1px -1px 4px #CECECE inset;
+    transition: left .3s ease-in-out;
+}
+
+.toggle_switch.active {
+    left: 35px;
+}
+
+.menu-text {
+    margin: auto;
+    padding: 10px 0;
+}
+
+/* JSで変更を加えるスタイル */
+main .display-none {
+    display: none;
+}
